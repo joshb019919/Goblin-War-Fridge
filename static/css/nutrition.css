@@ -1,0 +1,59 @@
+/* Used Mozilla Developer Network for all things CSS. */
+
+body {
+    background: rgb(243, 218, 218);
+}
+
+table {
+    margin: 5rem auto;
+    font-size: 3rem;
+}
+
+thead {
+    font-family: "Oswald", sans-serif;
+}
+
+th {
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+    border-bottom: 1px solid black;
+}
+
+tbody {
+    font-family: "Inter", sans-serif;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    padding: 0 25px 0 25px;
+    margin: 0 25px;
+    border-bottom: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+}
+
+input {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    table {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    table {
+        font-size: 1rem;
+    }
+}

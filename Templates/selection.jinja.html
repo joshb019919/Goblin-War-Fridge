@@ -1,0 +1,21 @@
+{% extends "./layout.jinja.html" %}
+
+{% block main %}
+
+{% if data %}
+<div>
+    <form action="/food" method="post" name="food_form">
+        <select name="returned_foods" id="returned_foods">
+
+            {% for food in data %}
+            <option name="choice" value="{{ food.description }}">{{ food.description }}</option>
+            {% endfor %}
+
+        </select>
+
+        <button type="submit">Get Nutrition Data</button>
+    </form>
+</div>
+{% endif %}
+
+{% endblock %}

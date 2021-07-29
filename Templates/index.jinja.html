@@ -1,0 +1,16 @@
+{% extends "layout.jinja.html" %}
+
+{% block main %}
+
+<form action="/" method="POST" class="m-5">
+    <input type="text" name="food" class="p-1 mr-2" autofocus required>
+    <button type="submit" class="btn btn-primary btn-large">Request List</button>
+</form>
+
+{% if no %}
+<h3><strong>FoodData Central's Foundation Foods has no such food.<br>Please try another query.</strong></h3>
+<h3>At the moment, this project only requests information from the Foundation data type.</h3>
+<h3>For a more complete program, try USDA's <a href="https://fdc.nal.usda.gov/">FoodData Central</a> database directly.</h3>
+{% endif %}
+
+{% endblock %}

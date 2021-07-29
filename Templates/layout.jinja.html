@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Don't use absolute paths.  Use a path relative to the directory stored in the Flask
+    config, e.g. Flask(static_folder="name of static folder in main application directory").
+    By default this is 'static'.  Must use url_for().
+
+    From:
+    https://stackoverflow.com/questions/27596297/flask-keep-getting-404-serving-static-files-using-send-static-file/27598141 -->
+    <link rel="shortcut icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nutrition.css') }}" />
+
+    <title>Goblin War Fridge</title>
+</head>
+<body>
+    <div class="container-fluid col justify-content-center">
+        <nav class="navbar-text navbar-nav align-center">
+            <ul>
+                <li><a href="/" class="display-3">Search for Another Food</a></li>
+            </ul>
+        </nav>
+
+        {% block main %}{% endblock %}
+
+        <footer class="text-center">
+            <author>Josh Borthick 2021</author>
+        </footer>
+    </div>
+</body>
+</html>

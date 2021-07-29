@@ -1,0 +1,49 @@
+Goblin War Fridge.
+
+A nutrition and meal planner, tracker, and journal.
+
+############################## DISCLAIMERS #############################
+# This software may be used and abused and, hopefully, vastly improved #
+# upon by anyone who sees a use for it, just give me original credit,  #
+# please.  PR's have full alterations and renaming rights, etc.        #
+#                                                                      #
+# Nothing is guaranteed to work, and while I am currently working on   #
+# it and have many high hopes, I can't guarantee continued support.    #
+#                                                                      #
+# Comments and concerns are always welcome.                            #
+#                                                                      #
+# Suggested citation, if needed for academia or posterity:             #
+#                                                                      #
+# Borthick, Josh, (2021). "Goblin War Fridge," Github repository.      #
+#      https://github.com/joshb019919/Nutrition-Tracker.git.           #
+########################################################################
+
+Documentation
+-------------
+Goblin War Fridge is designed to be a tailored repository of
+nutritional knowledge, collecting and displaying only data relevant to
+maintaining a healthy, rich, warrior lifestyle.
+
+Are you an athelete, trying to perfect your body with the latest
+understanding of protein synthesis and hourly fat breakdown?
+
+#### Goblin War Fridge is not for you.
+
+You, the athelete, would be better served by a trainer and professional
+coaching.  You, the slim and fit, obvisouly don't need help managing
+your eating habits.
+
+You, the busy, you the life-liver, the over and underweight, the always
+tired, and the inquisitive, might find this service helpful.
+
+LOGIN NOT YET IMPLEMENTED
+A warrior/user logs in, searches for ingredients, and assembles
+meals out of those ingredients.  Meals currently assigned to a
+warrior's account are in the warriorMeals table.  If a warrior
+deselects a meal, it is kept in the meals table so other warriors
+can view and learn from them.
+
+All nutrition data comes from the USDA's FoodData Central database.
+
+Special thanks to TutorialsPoint for their SQLite tutorials and the
+team at SQLAlchemy for their ORM tutorial.
